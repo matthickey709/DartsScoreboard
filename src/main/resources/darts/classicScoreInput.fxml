@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F9DFBC;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="darts.ClassicScoreInputController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Button fx:id="cancelInputBtn" mnemonicParsing="false" onAction="#cancelInput" style="-fx-background-color: #000000;" text="Cancel" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+        <Button fx:id="inputScoreBtn" mnemonicParsing="false" onAction="#registerScore" style="-fx-background-color: #309F6A;" text="Input Scores" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+      <Button fx:id="btn1" mnemonicParsing="false" onAction="#inputButtonNumber" prefHeight="47.0" prefWidth="53.0" style="-fx-background-color: #E3292E;" text="1" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your Score" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="scoreValue" strokeType="OUTSIDE" strokeWidth="0.0" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn0" mnemonicParsing="false" onAction="#inputButtonNumber" prefHeight="47.0" prefWidth="53.0" style="-fx-background-color: #E3292E;" text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn9" mnemonicParsing="false" onAction="#inputButtonNumber" prefHeight="47.0" prefWidth="53.0" style="-fx-background-color: #E3292E;" text="9" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn8" mnemonicParsing="false" onAction="#inputButtonNumber" prefHeight="47.0" prefWidth="53.0" style="-fx-background-color: #E3292E;" text="8" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn7" mnemonicParsing="false" onAction="#inputButtonNumber" prefHeight="47.0" prefWidth="53.0" style="-fx-background-color: #E3292E;" text="7" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn6" mnemonicParsing="false" onAction="#inputButtonNumber" prefHeight="47.0" prefWidth="53.0" style="-fx-background-color: #E3292E;" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn5" mnemonicParsing="false" onAction="#inputButtonNumber" prefHeight="47.0" prefWidth="53.0" style="-fx-background-color: #E3292E;" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn4" mnemonicParsing="false" onAction="#inputButtonNumber" prefHeight="47.0" prefWidth="53.0" style="-fx-background-color: #E3292E;" text="4" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn3" mnemonicParsing="false" onAction="#inputButtonNumber" prefHeight="47.0" prefWidth="53.0" style="-fx-background-color: #E3292E;" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn2" mnemonicParsing="false" onAction="#inputButtonNumber" prefHeight="47.0" prefWidth="53.0" style="-fx-background-color: #E3292E;" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#backspaceScoreValue" prefHeight="32.0" prefWidth="92.0" style="-fx-background-color: #551A8B;" text="Delete" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+    </children>
+</GridPane>

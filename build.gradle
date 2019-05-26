@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.javafxports:jfxmobile-plugin:1.3.16'
+        
+    }
+}
+
+apply plugin: 'org.javafxports.jfxmobile'
+
+mainClassName = 'darts.ScoreboardApplication'
+
+repositories {
+    jcenter()
+}
+
+jfxmobile {
+    ios {
+        forceLinkClasses = ['darts.**.*']
+    }
+    android {
+        applicationPackage = 'org.javafxports.ensemble'
+    }
+}
