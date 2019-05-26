@@ -9,11 +9,13 @@ Please follow the procedure outlined below to get the source code ready for deve
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Please ensure you have the following prerequisites installed before development.
 
-```
-Give examples
-```
+* [Latest version of Gradle](https://gradle.org)
+* [JetBrains IntelliJ IDEA](https://www.jetbrains.com/idea/) Community Edition is fine
+* Xcode (for iOS porting)
+* Android SDK (for Android porting)
+* JDK 8
 
 ### Installing
 
@@ -69,7 +71,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
