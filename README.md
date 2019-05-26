@@ -19,6 +19,10 @@ Please ensure you have the following prerequisites installed before development.
 
 ### Development and Use
 
+NOTE: If you encounter any build errors in this step, ensure you are using JDK8.
+This is done by setting either your JAVA_HOME environment variable, or by specifying
+IDE settings accordingly. 
+r
 Once all prerequisites have been installed, open the project in IntelliJ. Open
 the Gradle window, and run the main build task. If the build is error-free, execute the
 application run task to ensure it works on your computer. If this works fine, please consult
