@@ -43,75 +43,57 @@
          </font>
       </Text>
       <Button mnemonicParsing="false" onAction="#returnToHomepage" style="-fx-background-color: #000000;" text="Quit Game" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-      <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #309F6A;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <Pane fx:id="p1SetsPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #309F6A;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <children>
-            <Text fx:id="p1Sets" depthTest="DISABLE" fill="WHITE" layoutX="59.0" layoutY="85.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="p1Sets" depthTest="DISABLE" fill="WHITE" layoutX="55.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" textOrigin="CENTER">
                <font>
                   <Font size="50.0" />
                </font>
-               <cursor>
-                  <Cursor fx:constant="DEFAULT" />
-               </cursor>
             </Text>
          </children>
       </Pane>
-      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #309F6A;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+      <Pane fx:id="p1LegsPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #309F6A;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <children>
-            <Text fx:id="p1Legs" fill="WHITE" layoutX="59.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: CENTER;" text="0" textAlignment="CENTER">
+            <Text fx:id="p1Legs" fill="WHITE" layoutX="55.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: CENTER;" text="0" textAlignment="CENTER" textOrigin="CENTER">
                <font>
                   <Font size="50.0" />
                </font>
-               <cursor>
-                  <Cursor fx:constant="DEFAULT" />
-               </cursor>
             </Text>
          </children>
       </Pane>
-      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #309F6A;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <Pane fx:id="p2SetsPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #309F6A;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <children>
-            <Text fx:id="p2Sets" fill="WHITE" layoutX="59.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: CENTER;" text="0" textAlignment="CENTER">
+            <Text fx:id="p2Sets" fill="WHITE" layoutX="54.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: CENTER;" text="0" textAlignment="CENTER" textOrigin="CENTER">
                <font>
                   <Font size="50.0" />
                </font>
-               <cursor>
-                  <Cursor fx:constant="DEFAULT" />
-               </cursor>
             </Text>
          </children>
       </Pane>
-      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #309F6A;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+      <Pane fx:id="p2LegsPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #309F6A;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <children>
-            <Text fx:id="p2Legs" fill="WHITE" layoutX="59.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: CENTER;" text="0" textAlignment="CENTER">
+            <Text fx:id="p2Legs" fill="WHITE" layoutX="55.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: CENTER;" text="0" textAlignment="CENTER" textOrigin="CENTER">
                <font>
                   <Font size="50.0" />
                </font>
-               <cursor>
-                  <Cursor fx:constant="DEFAULT" />
-               </cursor>
             </Text>
          </children>
       </Pane>
-      <Pane onMouseClicked="#editPlayer2Score" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E3292E;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+      <Pane fx:id="p2ScorePane" onMouseClicked="#editPlayer2Score" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E3292E;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <children>
-            <Text fx:id="p2Score" fill="WHITE" layoutX="32.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: CENTER;" text="501" textAlignment="CENTER">
+            <Text fx:id="p2Score" fill="WHITE" layoutX="21.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: CENTER;" text="501" textAlignment="CENTER" textOrigin="CENTER">
                <font>
                   <Font size="50.0" />
                </font>
-               <cursor>
-                  <Cursor fx:constant="DEFAULT" />
-               </cursor>
             </Text>
          </children>
       </Pane>
-      <Pane onMouseClicked="#editPlayer1Score" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E3292E;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+      <Pane fx:id="p1ScorePane" onMouseClicked="#editPlayer1Score" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E3292E;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <children>
-            <Text fx:id="p1Score" fill="WHITE" layoutX="32.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: CENTER;" text="501" textAlignment="CENTER">
+            <Text fx:id="p1Score" fill="WHITE" layoutX="18.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: CENTER;" text="501" textAlignment="CENTER" textOrigin="CENTER">
                <font>
                   <Font size="50.0" />
                </font>
-               <cursor>
-                  <Cursor fx:constant="DEFAULT" />
-               </cursor>
             </Text>
          </children>
       </Pane>
