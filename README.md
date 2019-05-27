@@ -3,6 +3,8 @@
 A simple dartboard scoring system made with JavaFX that is portable to iOS, Android, and Embedded Systems.
 It allows scoring of 2-player 501 darts and Around the World, with a future implementation including Cricket.
 
+For some screenshots of the program, please see [my website](https://matthewhickey.me/projects#/darts).
+
 ## Getting Started
 
 Please follow the procedure outlined below to get the source code ready for development.
