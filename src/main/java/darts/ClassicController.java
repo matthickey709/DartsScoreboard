@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -24,6 +25,13 @@ public class ClassicController implements Initializable {
     @FXML Text p1Sets, p2Sets;
     @FXML Text p1Legs, p2Legs;
     @FXML Text p1Score, p2Score;
+
+    @FXML Pane p1SetsPane, p2SetsPane;
+    @FXML Pane p1LegsPane, p2LegsPane;
+    @FXML Pane p1ScorePane, p2ScorePane;
+
+    private static final Float H_MULTIPLIER = 3.5F;
+    private static final Integer V_MULTIPLIER = 2;
 
     public void editPlayer1Score(MouseEvent mouseEvent) throws Exception {
 
@@ -139,16 +147,34 @@ public class ClassicController implements Initializable {
         // Initialize the game object
         this.game = new ClassicGame(new Player(p1Name.getText()), new Player(p2Name.getText()), 501);
 
-        // Initially set sets and legs to zero for both players
+        // Initially set sets and legs to zero for both players and do their centering
         this.p1Sets.setText(game.getPlayer1Sets().toString());
-        this.p2Sets.setText(game.getPlayer2Sets().toString());
-        this.p1Legs.setText(game.getPlayer1Legs().toString());
-        this.p2Legs.setText(game.getPlayer2Legs().toString());
+        this.p1Sets.layoutXProperty().bind(this.p1SetsPane.widthProperty().subtract(p1Sets.wrappingWidthProperty()).divide(H_MULTIPLIER));
+        this.p1Sets.layoutYProperty().bind(this.p1SetsPane.heightProperty().subtract(p1Sets.wrappingWidthProperty()).divide(V_MULTIPLIER));
 
-        // Initially set remaining score to 501 for both players
+        this.p2Sets.setText(game.getPlayer2Sets().toString());
+        this.p2Sets.layoutXProperty().bind(this.p2SetsPane.widthProperty().subtract(p2Sets.wrappingWidthProperty()).divide(H_MULTIPLIER));
+        this.p2Sets.layoutYProperty().bind(this.p2SetsPane.heightProperty().subtract(p2Sets.wrappingWidthProperty()).divide(V_MULTIPLIER));
+
+        this.p1Legs.setText(game.getPlayer1Legs().toString());
+        this.p1Legs.layoutXProperty().bind(this.p1LegsPane.widthProperty().subtract(p1Legs.wrappingWidthProperty()).divide(H_MULTIPLIER));
+        this.p1Legs.layoutYProperty().bind(this.p1LegsPane.heightProperty().subtract(p1Legs.wrappingWidthProperty()).divide(V_MULTIPLIER));
+
+        this.p2Legs.setText(game.getPlayer2Legs().toString());
+        this.p2Legs.layoutXProperty().bind(this.p1LegsPane.widthProperty().subtract(p2Legs.wrappingWidthProperty()).divide(H_MULTIPLIER));
+        this.p2Legs.layoutYProperty().bind(this.p1LegsPane.heightProperty().subtract(p2Legs.wrappingWidthProperty()).divide(V_MULTIPLIER));
+
+        // Initially set remaining score to 501 for both players and do their centering
         // TODO: have a previous screen that players can choose between 301 and 501 starting scores
         this.p1Score.setText(game.getStartingScore().toString());
+        this.p1Score.layoutXProperty().bind(this.p1ScorePane.widthProperty().subtract(p1Score.wrappingWidthProperty()).divide(H_MULTIPLIER));
+        this.p1Score.layoutYProperty().bind(this.p1ScorePane.heightProperty().subtract(p1Score.wrappingWidthProperty()).divide(V_MULTIPLIER));
+
         this.p2Score.setText(game.getStartingScore().toString());
+        this.p2Score.layoutXProperty().bind(this.p2ScorePane.widthProperty().subtract(p2Score.wrappingWidthProperty()).divide(H_MULTIPLIER));
+        this.p2Score.layoutYProperty().bind(this.p2ScorePane.heightProperty().subtract(p2Score.wrappingWidthProperty()).divide(V_MULTIPLIER));
+
+
 
     }
 }
