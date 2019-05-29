@@ -20,6 +20,7 @@ repositories {
 jfxmobile {
     ios {
         forceLinkClasses = ['darts.**.*']
+        iosProvisioningProfile = 'iOS Team Provisioning Profile: darts.ScoreboardApplication'
     }
     android {
         applicationPackage = 'org.javafxports.ensemble'
