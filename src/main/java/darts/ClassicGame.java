@@ -56,6 +56,7 @@ public class ClassicGame extends Game {
                 // If player has 2 legs won, increase their sets. Controller will handle a win.
                 this.setPlayer1Sets(this.getPlayer1Sets() + 1);
                 this.setPlayer1Legs(0);
+                this.setPlayer2Legs(0);
             } else {
                 // Increase player's leg count
                 this.setPlayer1Legs(this.getPlayer1Legs() + 1);
@@ -65,6 +66,7 @@ public class ClassicGame extends Game {
             if (this.getPlayer2Legs() == 2) {
                 // If player has 2 legs won, increase their sets. Controller will handle a win.
                 this.setPlayer2Sets(this.getPlayer2Sets() + 1);
+                this.setPlayer1Legs(0);
                 this.setPlayer2Legs(0);
             } else {
                 // Increase player's leg count
